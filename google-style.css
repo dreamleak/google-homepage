@@ -40,6 +40,8 @@
       object-position: center bottom;
     }
 
+
+
   /*============
   NAVIGATION BAR
   =============*/
@@ -84,6 +86,24 @@ input[type=search] {
     
 }
 
+form {
+  position: relative;
+}
+
+form:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  opacity: 0.4;
+  background: url("search_black_24dp.svg") center / contain no-repeat;
+}
+
+input {
+  padding: 10px 30px;
+}
 
   /*=======
   BUTTONS
