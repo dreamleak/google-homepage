@@ -31,7 +31,7 @@
 
   .google-logo {
       display: flex;
-      align-items: center;
+      justify-content: center;
       padding: 1.2em;
       max-height: 100%;
       max-width: 100%;
@@ -40,7 +40,7 @@
       object-position: center bottom;
     }
 
-
+    
 
   /*============
   NAVIGATION BAR
@@ -78,13 +78,15 @@ ul {
   ==========*/
 
 input[type=search] {
-    border-radius: 14px;
+    border-radius: 100vh;
     padding: 1em 3em;
     width: 100%;
     text-align: center;
     border: 1px solid #e9eaeb;
-    
+    height: 40px;
+    width: 527px;
 }
+
 
 form {
   position: relative;
@@ -109,6 +111,12 @@ input {
   BUTTONS
   =======*/
 
+  .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
 
 input[type=submit] {
     border-radius: 8px;
