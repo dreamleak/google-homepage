@@ -16,6 +16,7 @@
     justify-content: center;
     margin: 30px;
     min-height: 100vh;
+    height: calc(100% - 560px);
   }
   
   .content-wrap {
@@ -31,9 +32,12 @@
   .google-logo {
       display: flex;
       align-items: center;
+      padding: 1.2em;
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
       object-fit: contain;
       object-position: center bottom;
-      height: calc(100% - 560px);
     }
 
   /*============
@@ -88,15 +92,13 @@ input[type=search] {
 
 input[type=submit] {
     border-radius: 8px;
-    padding: 0px 16px;
     margin: 11px 4px;
     background-color: #f8f9fa;
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     font-size: 14px;
     line-height: 27px;
     border: 1px solid #f8f9fa;
-    padding: 0 16px;
-    line-height: 27px;
+    padding: 0 18px;
     height: 36px;
 }
 
