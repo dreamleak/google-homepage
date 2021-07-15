@@ -18,6 +18,7 @@
     margin: 30px;
     min-height: 100vh;
     height: calc(100% - 560px);
+    margin-top: 160px;
   }
   
   .content-wrap {
