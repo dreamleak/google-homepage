@@ -1,6 +1,7 @@
  * + * {
      margin: 0;
      padding: 0;
+     border: 0;
      font-family: Arial, Helvetica, sans-serif;
      overflow: hidden;
      font-size: 14px;
@@ -47,19 +48,43 @@
   =============*/
 
   #nav-bar {
-      min-width: auto;
-      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      padding-right: 12em;
+  }
+
+  /* for seperating navigation bar content */
+   .right-align > li {
+    float: right;
   }
 
  li {
      padding: 0.5em;
-     display: inline-block;
+     display: block;
+     float: left;
  }
 
 ul {
     list-style-type: none;
-    overflow: hidden;
  }
+
+ /* google application material icon */
+
+   .apps-icon {
+     position: absolute;
+     padding-right: 30px;
+    top: 16px;
+    right: 65px;
+    width: 25px;
+    height: 25px;
+    margin-right: 1.5rem;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+ }
+
+
 
    /* =======
    NAV LINKS
@@ -92,7 +117,7 @@ form {
   position: relative;
 }
 
-form:before {
+form::before {
   content: "";
   position: absolute;
   left: 10px;
@@ -135,8 +160,25 @@ input[type="submit"]:hover {
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
+    cursor: grab;
 }
 
+.sign-in-button {
+  position: absolute;
+  border-radius: 4px;
+  right: 0;
+  top: 0;
+  background-color: #1a73e8;
+  border: none;
+  padding: 9px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  margin: 10px 12px; 
+  cursor: pointer;
+  color: #fff;
+}
 
   /*=======
    FOOTER
