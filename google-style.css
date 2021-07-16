@@ -93,12 +93,14 @@ ul {
 
  a {
      text-decoration: none;
-    color: #000000 }
+     color:rgba(0,0,0,0.87); 
+    }
 
  a:hover {
      text-decoration: underline;
  }
 
+ 
   /*=========
   SEARCH BAR
   ==========*/
@@ -145,6 +147,7 @@ input {
     
 
 input[type=submit] {
+    color: #3c4043;
     border-radius: 8px;
     margin: 11px 4px;
     background-color: #f8f9fa;
